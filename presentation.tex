@@ -1,0 +1,124 @@
+\documentclass[10pt]{beamer}
+\usepackage[utf8]{inputenc}
+
+\usetheme{metropolis}
+
+\usepackage{acronym} % \ac[p], \acl[p], \acs[p], \acf[p]
+\usepackage{appendixnumberbeamer}
+\usepackage[scale=2]{ccicons}
+\usepackage{subcaption} % subfigure
+\usepackage[absolute, overlay]{textpos}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usepackage{verbatim}
+
+\usepackage{transparent}
+
+\usepackage{graphicx}
+\usepackage{color}
+\AtBeginDocument{
+\definecolor{pdfurlcolor}{rgb}{0,0,0}
+\definecolor{pdfcitecolor}{rgb}{0,0,0}
+\definecolor{pdflinkcolor}{rgb}{0,0,0}
+\definecolor{light}{gray}{.85}
+\definecolor{vlight}{gray}{.95}
+\definecolor{darkgreen}{rgb}{0.0, 0.2, 0.13}
+\definecolor{mydarkblue}{RGB}{116,173,209}
+\definecolor{mydarkblueid}{RGB}{83,154,198}
+\definecolor{mylightblue}{RGB}{171,217,233}
+\definecolor{mydarkorange}{RGB}{244,109,67}
+\definecolor{mylightorange}{RGB}{252,153,54}
+\definecolor{mydarkred}{RGB}{215,48,39}
+}
+
+% Acronyms
+% --------
+\acrodef{CRDT}[CRDT]{Conflict-free Replicated Data Type}
+\acrodefplural{CRDT}[CRDTs]{Conflict-free Replicated Data Types}
+
+\author{
+  Encadrants : Olivier Perrin et Gérald Oster
+  \\
+  Équipe COAST
+}
+\title{Candidature ATER}
+\subtitle{Matthieu Nicolas}
+\institute{
+  \vspace{3em}
+  \includegraphics[width=2.8cm]{img/loria-logo.png}\hspace{3em}
+  \includegraphics[width=1.2cm]{img/ul-logo.pdf}\hspace{3em}
+  \includegraphics[width=3cm]{img/inria-logo.pdf}\hspace{3em}
+  \includegraphics[width=1.2cm]{img/cnrs-logo.png}
+}
+
+\usepackage[url=false, backend=biber,defernumbers=true,style=trad-plain,sorting=ydnt,maxbibnames=1,maxcitenames=1]{biblatex}
+\addbibresource{biblio.bib}
+\AtBeginBibliography{\footnotesize}
+\setbeamertemplate{bibliography item}[text] % use ref number in bibliography
+
+\renewcommand{\thefootnote}{[\arabic{footnote}]}
+
+\usepackage{silence}
+\WarningFilter{biblatex}{Patching footnotes failed}
+
+\begin{document}
+
+\begin{frame}[t,plain]
+  \maketitle
+\end{frame}
+
+\begin{frame}{Parcours académique et professionnel}
+  \begin{description}
+    \item[2011 - 2014] Ingénieur TELECOM Nancy, spé. Ingénierie du Logiciel
+      \\
+      \textbf{TELECOM Nancy}
+    \item[2014 - 2017] Ingénieur Recherche \& Développement
+      \\
+      \emph{Dev. de MUTE, un éditeur de texte collaboratif web P2P}
+      \\
+      \textbf{Loria, équipe COAST}
+    \item[2017 - 2020] Doctorant contractuel - Chargé d'enseignement
+      \\
+      \textbf{Loria, équipe COAST - IUT Nancy Charlemagne}
+    \item[2020 - 2021] Doctorant contractuel - demi-ATER
+      \\
+      \textbf{Loria, équipe COAST - Polytech Nancy}
+  \end{description}
+\end{frame}
+
+\begin{frame}{Thèse}
+  \begin{description}
+      \item[Intitulé] (Ré)Identification efficace dans les types de données répliquées sans conflit (CRDTs)
+      \item[Encadrants] Pr. Olivier Perrin et Dr. Gérald Oster
+      \item[Mots clés] Systèmes distribués, pair-à-pair, réplication optimiste, CRDTs, édition collaborative temps réel
+      \item[Publications] \fullcite{nicolas:hal-01932552}
+        \\
+        \fullcite{nicolas:hal-02526724}
+      \item[Soutenance] Hiver 2021
+  \end{description}
+\end{frame}
+
+\begin{frame}{Enseignement}
+  \begin{description}
+    \item[~~Composantes] Polytech Nancy, IUT Nancy Charlemagne,
+      \\
+      ~~~TELECOM Nancy, FST Nancy
+    \item[~~~~~~~~~Niveaux] L1 à L3
+    \item[Volume horaire] 350h eq. TD
+  \end{description}
+  \textbf{Modules enseignés}
+  \begin{itemize}
+    \item Algorithmique
+    \item Programmation Web
+    \item Conception Orientée Objet
+    \item Base de Données
+  \end{itemize}
+  \textbf{Souhaits}
+  \begin{itemize}
+    \item Enseigner en M1 ou M2
+    \item Génie Logiciel, Algorithmique Parallèle ou Distribuée
+    \item Polytech Nancy
+  \end{itemize}
+\end{frame}
+
+\end{document}
